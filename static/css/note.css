@@ -1,18 +1,16 @@
+body {
+    background: white url("back.jpg");
+}
 h3 {
     color: chocolate;
 }
-
-thead {
-    color: cornflowerblue;
-    font: bold 10pt "PT Mono";
+th {
+    padding-bottom: 10px;
+;
+    color: lightsteelblue;
+    padding-left: 30px;
 }
-
-tr {
-    margin-left: 100px;
-    color: #828282;
-    font-family: 'PT Mono';
-}
-
-body {
-    padding-left: 15px;
+td {
+    padding-left: 30px;
+    color: darkgrey;
 }
