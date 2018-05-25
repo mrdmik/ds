@@ -1,11 +1,18 @@
 h3 {
-    color: #FCA205;
+    color: chocolate;
 }
-body {
-    padding-left: 15px;
+
+thead {
+    color: cornflowerblue;
+    font: bold 10pt "PT Mono";
 }
-.tdclass {
-    margin-left: 40px;
+
+tr {
+    margin-left: 100px;
     color: #828282;
     font-family: 'PT Mono';
+}
+
+body {
+    padding-left: 15px;
 }
