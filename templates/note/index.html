@@ -1,15 +1,16 @@
-{% load static %}
 <!DOCTYPE html>
+{% load staticfiles  %}
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/note.css' %}">
     <title>Test</title>
 </head>
 <body>
-
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- Header -->

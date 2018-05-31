@@ -1,5 +1,5 @@
 body {
-    background: white url("back.jpg");
+    background: white url('/static/images/back.jpg');
 }
 .navbar {
     border-radius: 0;
