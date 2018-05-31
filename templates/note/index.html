@@ -1,10 +1,11 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/note.css' %}">
-    <meta charset="UTF-8">
     <title>Test</title>
 </head>
 <body>
@@ -55,23 +56,5 @@
             </div>
         </div>
     </nav>
-
-    <div>
-        <h3>Регулярные выражения</h3>
-    </div>
-    <div>
-        <table>
-            <th>Якоря</th>
-            <tr><td>^</td><td>Начало строки +</td></tr>
-            <tr><td>$</td><td>Конец строки +</td></tr>
-            <tr><td>\A</td><td>Начало текста +</td></tr>
-            <tr><td>\Z</td><td>Конец текста +</td></tr>
-            <tr><td>\b</td><td>Граница слова +</td></tr>
-            <tr><td>\B</td><td>Не граница слова +</td></tr>
-            <tr><td>\<</td><td>Начало слова</td></tr>
-            <tr><td>\></td><td>Конец слова</td></tr>
-        </table>
-    </div>
-
 </body>
 </html>
