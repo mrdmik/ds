@@ -6,25 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-{#    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">#}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Test</title>
 </head>
 <body>
     <header class="container">
         <nav>
+
             <ul class="topmenu">
-                <li><a href="#"><span>blog</span></a></li>
-                <li><a href="#"><span>home</span></a></li>
-                <li><a href="#"><span>notes</span></a>
+                <li>
+                    <a class="logo" href="#">
+                        <img src="{% static 'images/catbat_w.svg' %}" width="30" height="30">
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="#">
+                        <img src="{% static 'images/home_w.svg' %}" width="16" height="16">
+                        <span> home</span>
+                    </a>
+                </li>
+                <li><a href="#">notes</a>
                     <ul class="submenu">
-                        <li><a href="#"><span>regex</span></a></li>
-                        <li><a href="#"><span>linux</span></a></li>
-                        <li><a href="#"><span>git</span></a></li>
+                        <li><a href="#">regex</a></li>
+                        <li><a href="#">linux</a></li>
+                        <li><a href="#">git</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><span>about</span></a></li>
-                <li class="last"><a href="#"><span>login</span></a></li>
+                <li><a href="#">about</a></li>
+                <li class="last">
+                    <a class="ico" href="#">
+                        <img src="{% static 'images/user_w.svg' %}" width="28" height="28">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>

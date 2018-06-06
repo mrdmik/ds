@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
+
 body {
     margin: 0;
-    background-color: #eee;}
+    background-color: #eee;
+}
 nav {
 	height: 40px;
 	font-family: 'Dosis', sans-serif;
@@ -12,16 +14,30 @@ nav ul {
 	margin: 0;
     padding: 0;
 }
-nav li a:hover { color: #6c3; }
-nav li.last { float: right; }
 nav a {
     text-decoration: none;
     display: block;
     letter-spacing: 2px;
     padding: 7px 20px;
+    height: 26px;
     color: #eee;
     font-size: 1.3em;
+    transition: .4s linear
 }
+nav a.logo {
+    padding: 5px 10px;
+    height: 30px;
+}
+nav a.ico {
+    padding: 6px 15px;
+    height: 28px;
+}
+nav li a.active { color: white; }
+nav li a:hover {
+    background: #262926;
+    color: #0fff80;
+}
+nav li.last { float: right; }
 .container {
     width: 100%;
     max-width: 1024px;
@@ -29,9 +45,7 @@ nav a {
     margin: 0 auto;
 }
 .topmenu > li {float: left;}
-/*.topmenu > li > a {font-size: 1.3em;}*/
-.topmenu > li:hover > .submenu{ visibility: visible; }
-.topmenu > li > a.active { color: darkred; }
+.topmenu > li:hover > .submenu { visibility: visible; }
 .submenu {
     position: absolute;
     min-width: 100px;
