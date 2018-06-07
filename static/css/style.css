@@ -22,16 +22,26 @@ nav a {
     height: 26px;
     color: #eee;
     font-size: 1.3em;
-    transition: .4s linear
+    transition: .5s linear
 }
 nav a.logo {
-    padding: 5px 10px;
+    padding: 5px 50px 5px 10px;
     height: 30px;
 }
 nav a.ico {
     padding: 6px 15px;
     height: 28px;
 }
+nav .anim_ico {
+    position:relative;
+    margin:0 auto;
+    width:28px;
+    height: 28px;
+}
+nav .anim_ico img { position:absolute; }
+nav .anim_ico img.first_ico { opacity:0; }
+nav .anim_ico:hover img.first_ico { opacity:1; }
+nav .anim_ico:hover img.second_ico, .animate2 img.second_ico:hover { opacity:0; transition: .5s linear;}
 nav li a.active { color: white; }
 nav li a:hover {
     background: #262926;

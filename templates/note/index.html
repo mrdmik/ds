@@ -16,15 +16,18 @@
             <ul class="topmenu">
                 <li>
                     <a class="logo" href="#">
-                        <img src="{% static 'images/catbat_w.svg' %}" width="30" height="30">
+                        <div class="anim_ico">
+                            <img class="first_ico" src="{% static 'images/catbat_g.svg' %}" width="30" height="30">
+                            <img class="second_ico" src="{% static 'images/catbat_w.svg' %}" width="30" height="30">
+                        </div>
                     </a>
                 </li>
-                <li>
-                    <a class="active" href="#">
-                        <img src="{% static 'images/home_w.svg' %}" width="16" height="16">
-                        <span> home</span>
-                    </a>
-                </li>
+{#                <li>#}
+{#                    <a class="active" href="#">#}
+{#                        <img src="{% static 'images/home_w.svg' %}" width="16" height="16">#}
+{#                        <span> home</span>#}
+{#                    </a>#}
+{#                </li>#}
                 <li><a href="#">notes</a>
                     <ul class="submenu">
                         <li><a href="#">regex</a></li>
@@ -35,7 +38,10 @@
                 <li><a href="#">about</a></li>
                 <li class="last">
                     <a class="ico" href="#">
-                        <img src="{% static 'images/user_w.svg' %}" width="28" height="28">
+                        <div class="anim_ico">
+                            <img class="first_ico" src="{% static 'images/user_g.svg' %}" width="28" height="28">
+                            <img class="second_ico" src="{% static 'images/user_w.svg' %}" width="28" height="28">
+                        </div>
                     </a>
                 </li>
             </ul>
