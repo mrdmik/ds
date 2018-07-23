@@ -1,6 +1,8 @@
 from django.conf.urls import url
-from . import views
+
+from note.views import note
 
 urlpatterns = [
-    url(r'^$', views.note, name='note'),
+    url(r'^$', note, name='note'),
+    # url(r'^about/$', about, name='about'),
 ]

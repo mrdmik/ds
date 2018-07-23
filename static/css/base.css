@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'blogger';
+    src: url('../fonts/BloggerSans.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/BloggerSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/BloggerSans.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/BloggerSans.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/BloggerSans.svg#BloggerSans') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    /*text-rendering: optimizeLegibility;*/
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+.container-menu {
+    background-color: #333;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12);
+}
+.container-menu a {
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    font-size: 20px;
+    font-family: blogger, sans-serif;
+    padding: 10px;
+    transition: all 0.5s linear 0s;
+}
+.container-menu a:hover { color: #0fff80; }
+.container-menu ul {
+    display: flex;
+    list-style-type: none;
+}
+.container-menu li {
+    position: relative;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+ul.dropdown_menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12);
+}
+.container-menu li:hover .dropdown_menu {
+    visibility: visible;
+    opacity: 1;
+}
