@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Test{% endblock %}</title>
+    {% block styles %}
+        <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/reset.css" %}">
+    {% endblock %}
+</head>
+<body>
+<header>
+    {% block nav %}
+        {% include "nav.html" %}
+    {% endblock %}
+</header>
+    {% block content %}{% endblock %}
+</body>
+</html>
