@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Linux{% endblock %}
+
+{% block styles %}
+        <link rel="stylesheet" type="text/css" href="{% static "css/note/content.css" %}">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <br/>
+        <input class='hide' type='checkbox' id='l-01'/>
+        <label for='l-01'>Linux</label>
+        <div>Operating System</div>
+        <br/>
+    </div>
+{% endblock %}

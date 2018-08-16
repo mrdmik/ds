@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Git{% endblock %}
+
+{% block styles %}
+        <link rel="stylesheet" type="text/css" href="{% static "css/note/content.css" %}">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <br/>
+        <input class='hide' type='checkbox' id='g-01'/>
+        <label for='g-01'>Git</label>
+        <div>Control Version System</div>
+        <br/>
+    </div>
+{% endblock %}

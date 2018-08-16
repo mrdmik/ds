@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% load staticfiles %}
+
+{% block title %}ReGeX{% endblock %}
+
+{% block styles %}
+        <link rel="stylesheet" type="text/css" href="{% static "css/note/content.css" %}">
+{% endblock %}
+
+{% block content %}
+    <div>
+        <br/>
+        <input class='hide' type='checkbox' id='r-01'/>
+        <label for='r-01'>ReGeX</label>
+        <div>Regular Expressions</div>
+        <br/>
+    </div>
+{% endblock %}

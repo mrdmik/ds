@@ -3,12 +3,12 @@
 <div class="container-menu">
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Notes</a>
+            <li><a href={% url "note:index" %}>home</a></li>
+            <li><a href="#">notes</a>
                 <ul class="dropdown_menu">
-                    <li><a href="#">regex</a></li>
-                    <li><a href="#">git</a></li>
-                    <li><a href="#">linux</a></li>
+                    <li><a href={% url "note:regex" %}>regex</a></li>
+                    <li><a href={% url "note:git" %}>git</a></li>
+                    <li><a href={% url "note:linux" %}>linux</a></li>
                 </ul>
             </li>
         </ul>

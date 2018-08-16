@@ -1,5 +1,17 @@
 from django.shortcuts import render
 
 
-def note(request):
-    return render(request, 'base.html')
+def index(request):
+    return render(request, 'index.html')
+
+
+def regex(request):
+    return render(request, 'note/regex.html')
+
+
+def linux(request):
+    return render(request, 'note/linux.html')
+
+
+def git(request):
+    return render(request, 'note/git.html')

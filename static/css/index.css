@@ -56,3 +56,9 @@ ul.dropdown_menu {
     visibility: visible;
     opacity: 1;
 }
+main {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

@@ -5,10 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Test{% endblock %}</title>
-    {% block styles %}
-        <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
-        <link rel="stylesheet" type="text/css" href="{% static "css/reset.css" %}">
-    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/reset.css" %}">
+    {% block styles %}{% endblock %}
 </head>
 <body>
 <header>
@@ -16,6 +15,10 @@
         {% include "nav.html" %}
     {% endblock %}
 </header>
+<main>
     {% block content %}{% endblock %}
+</main>
+<footer>
+</footer>
 </body>
 </html>
